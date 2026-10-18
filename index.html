@@ -6,19 +6,30 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <meta name="description"
-          content="Portafolio profesional de desarrollo de software.">
-    <title>Mi Portafolio | Software Developer</title>
+          content="Portafolio profesional de Oscar Tacuri, Software Developer. Proyectos de gestión territorial, automatización, sistemas deportivos y aplicaciones web.">
+    <meta name="author" content="Oscar Tacuri">
+    <meta name="theme-color" content="#050B17">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Oscar Tacuri | Software Developer">
+    <meta property="og:description"
+          content="Portafolio profesional: proyectos, tecnologías y trayectoria de Oscar Tacuri, Software Developer.">
+    <title>Oscar Tacuri | Software Developer</title>
+    <link rel="icon"
+          href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23050B17'/%3E%3Ctext x='50' y='66' font-size='44' font-family='Arial, sans-serif' font-weight='bold' fill='%2300BFFF' text-anchor='middle'%3EOT%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js" defer></script>
 </head>
 <body>
 
+<a href="#inicio" class="skip-link">Saltar al contenido principal</a>
 
 <header>
     <nav aria-label="Navegación principal">
 
         <a href="#inicio" class="nav-logo">
-            DEV.PORTFOLIO
+            <span class="nav-logo-mark" aria-hidden="true">OT</span>
+            <span class="nav-logo-text">OSCAR TACURI</span>
         </a>
 
         <button
@@ -37,18 +48,158 @@
             <li><a href="#sobre-mi">Sobre mí</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#tecnologias">Tecnologías</a></li>
+            <li><a href="#trayectoria">Trayectoria</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
+
+        <span class="lang-switch"
+              aria-label="Idioma actual: Español. El selector de idioma es un indicador informativo; la traducción aún no está disponible.">
+            <span aria-hidden="true">🌐</span> ES
+        </span>
 
     </nav>
 </header>
 
 
 <main>
-    <section id="inicio">
-        <h1>Transformando ideas en soluciones digitales</h1>
-        <p>Desarrollo de software, automatización y tecnología.</p>
-        <a href="#proyectos">Explorar proyectos</a>
+    <section id="inicio" aria-labelledby="hero-name">
+        <div class="hero-grid">
+
+            <div class="hero-content">
+                <p class="hero-greeting">Hola, soy</p>
+
+                <h1 id="hero-name" class="hero-name">
+                    OSCAR <span>TACURI</span>
+                </h1>
+
+                <p class="hero-role">SOFTWARE DEVELOPER</p>
+
+                <ul class="hero-tags">
+                    <li>Lógica &amp; sistemas</li>
+                    <li>Soluciones inteligentes</li>
+                </ul>
+
+                <p class="hero-summary">
+                    Desarrollo software para resolver problemas reales:
+                    sistemas de gestión, automatización de procesos y
+                    plataformas de análisis de datos.
+                </p>
+
+                <ul class="hero-specialties" aria-label="Especialidades principales">
+                    <li>Desarrollo Web</li>
+                    <li>Automatización</li>
+                    <li>Bases de Datos</li>
+                    <li>Sistemas GIS</li>
+                </ul>
+
+                <div class="hero-actions">
+                    <a href="#proyectos" class="btn btn-primary">Explorar proyectos</a>
+                    <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                </div>
+
+                <!--
+                    Enlaces a redes profesionales: se incorporarán aquí
+                    (GitHub, LinkedIn) cuando se disponga de las URL reales.
+                    Mientras tanto, están disponibles en la sección de
+                    contacto a través de SOCIAL_LINKS en js/main.js.
+                -->
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <svg class="globe" viewBox="0 0 440 440" focusable="false">
+                    <defs>
+                        <radialGradient id="globeGlow" cx="50%" cy="45%" r="60%">
+                            <stop offset="0%" stop-color="#00BFFF" stop-opacity="0.35"/>
+                            <stop offset="100%" stop-color="#00BFFF" stop-opacity="0"/>
+                        </radialGradient>
+                        <linearGradient id="globeLine" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#7dd3fc"/>
+                            <stop offset="100%" stop-color="#2563eb"/>
+                        </linearGradient>
+                        <radialGradient id="globeShade" cx="36%" cy="30%" r="75%">
+                            <stop offset="0%" stop-color="#132742" stop-opacity="0"/>
+                            <stop offset="65%" stop-color="#050B17" stop-opacity="0"/>
+                            <stop offset="100%" stop-color="#050B17" stop-opacity="0.65"/>
+                        </radialGradient>
+                    </defs>
+
+                    <circle cx="220" cy="220" r="212" fill="url(#globeGlow)"/>
+
+                    <g class="globe-orbit">
+                        <circle cx="220" cy="220" r="196" fill="none"
+                                stroke="#00BFFF" stroke-opacity="0.16" stroke-width="1"
+                                stroke-dasharray="1 9"/>
+                    </g>
+
+                    <g class="globe-sphere">
+                        <circle cx="220" cy="220" r="150" fill="#0C1830"/>
+
+                        <g fill="#00BFFF" fill-opacity="0.4"
+                           transform="translate(70 70) scale(0.5859375)">
+                            <path d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5l0 39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9l0 39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7l0-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1L257 256c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5z"/>
+                        </g>
+                        <g fill="#7dd3fc" fill-opacity="0.22"
+                           transform="translate(70 70) scale(0.5859375) rotate(180 256 256)">
+                            <path d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5l0 39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9l0 39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7l0-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1L257 256c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5z"/>
+                        </g>
+
+                        <circle cx="220" cy="220" r="150" fill="url(#globeShade)"/>
+
+                        <circle cx="220" cy="220" r="150" fill="none"
+                                stroke="url(#globeLine)" stroke-opacity="0.55" stroke-width="1.5"/>
+                        <ellipse cx="220" cy="220" rx="150" ry="60" fill="none"
+                                 stroke="#00BFFF" stroke-opacity="0.35" stroke-width="1"/>
+                        <ellipse cx="220" cy="220" rx="150" ry="110" fill="none"
+                                 stroke="#00BFFF" stroke-opacity="0.3" stroke-width="1"/>
+                        <ellipse cx="220" cy="220" rx="60" ry="150" fill="none"
+                                 stroke="#00BFFF" stroke-opacity="0.3" stroke-width="1"/>
+                        <ellipse cx="220" cy="220" rx="110" ry="150" fill="none"
+                                 stroke="#00BFFF" stroke-opacity="0.25" stroke-width="1"/>
+                        <circle cx="220" cy="220" r="150" fill="none"
+                                stroke="#7dd3fc" stroke-opacity="0.25" stroke-width="1"
+                                stroke-dasharray="2 7"/>
+                        <circle cx="220" cy="220" r="149" fill="none"
+                                stroke="#EAF6FF" stroke-opacity="0.12" stroke-width="0.75"/>
+
+                        <g class="globe-nodes">
+                            <circle cx="140" cy="150" r="4"/>
+                            <circle cx="300" cy="125" r="3.5"/>
+                            <circle cx="320" cy="260" r="4"/>
+                            <circle cx="165" cy="305" r="3"/>
+                            <circle cx="230" cy="185" r="3"/>
+                            <circle cx="265" cy="315" r="3.5"/>
+                            <circle cx="190" cy="95" r="3"/>
+                            <circle cx="95" cy="230" r="3"/>
+                            <path d="M140,150 L230,185 L300,125"/>
+                            <path d="M230,185 L320,260 L265,315"/>
+                            <path d="M165,305 L265,315"/>
+                            <path d="M190,95 L140,150"/>
+                            <path d="M165,305 L95,230"/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+
+        </div>
+
+        <div class="stats-bar" aria-label="Indicadores profesionales">
+            <div class="stat-item">
+                <span class="stat-number">5</span>
+                <span class="stat-label">Proyectos desarrollados</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">26</span>
+                <span class="stat-label">Tecnologías y herramientas</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">4</span>
+                <span class="stat-label">Áreas de especialización</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">UPS</span>
+                <span class="stat-label">Formación académica en curso</span>
+            </div>
+        </div>
     </section>
 
     <section id="sobre-mi" aria-labelledby="sobre-mi-titulo">
@@ -148,87 +299,182 @@
 
     </section>
 
-    <section id="proyectos">
-        <h2>Mis proyectos</h2>
+    <section id="proyectos" aria-labelledby="proyectos-titulo">
+        <span class="section-label">LO QUE HE CONSTRUIDO</span>
+        <h2 id="proyectos-titulo">Mis proyectos</h2>
         <p>
             Explora algunas de las soluciones tecnológicas
             que he desarrollado.
         </p>
 
-        <div class="projects-grid">
+        <div class="project-filters" role="group" aria-label="Filtrar proyectos por categoría">
+            <button type="button" class="filter-btn is-active" data-filter="todos" aria-pressed="true">Todos</button>
+            <button type="button" class="filter-btn" data-filter="gestion" aria-pressed="false">Gestión y datos</button>
+            <button type="button" class="filter-btn" data-filter="automatizacion" aria-pressed="false">Automatización</button>
+            <button type="button" class="filter-btn" data-filter="fintech" aria-pressed="false">Fintech</button>
+            <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
+        </div>
 
-            <article class="project-card">
-                <span class="project-number">01</span>
-                <h3>Territorio Electoral</h3>
-                <p>
-                    Plataforma para la gestión territorial,
-                    registros ciudadanos, encuestas y
-                    visualización geográfica.
-                </p>
-                <div class="project-tags">
-                    <span>Python</span>
-                    <span>PostgreSQL</span>
-                    <span>PostGIS</span>
+        <p class="filter-status" id="filter-status" role="status" aria-live="polite"></p>
+
+        <div class="projects-grid" id="projects-grid">
+
+            <article class="project-card" data-category="gestion">
+                <div class="project-cover">
+                    <img src="assets/images/projects/territorio-electoral.svg"
+                         alt="Ilustración abstracta de un mapa territorial con distritos y puntos geolocalizados"
+                         loading="lazy" decoding="async" width="480" height="270">
+                </div>
+                <div class="project-body">
+                    <span class="project-number">01</span>
+                    <span class="project-category-tag">Gestión territorial</span>
+                    <h3>Territorio Electoral</h3>
+                    <p class="project-summary">
+                        Plataforma para la gestión territorial,
+                        registros ciudadanos, encuestas y
+                        visualización geográfica.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>PostgreSQL</span>
+                        <span>PostGIS</span>
+                    </div>
+                    <details class="project-details">
+                        <summary>Ver detalles</summary>
+                        <p>
+                            Permite administrar información territorial,
+                            registrar datos ciudadanos, gestionar encuestas
+                            y visualizar resultados sobre mapas mediante
+                            PostGIS.
+                        </p>
+                    </details>
                 </div>
             </article>
 
-            <article class="project-card">
-                <span class="project-number">02</span>
-                <h3>Bot de señales Forex</h3>
-                <p>
-                    Sistema de análisis técnico multitemporal
-                    que genera señales de trading y envía
-                    notificaciones mediante Telegram.
-                </p>
-                <div class="project-tags">
-                    <span>Python</span>
-                    <span>MetaTrader 5</span>
-                    <span>Telegram</span>
+            <article class="project-card" data-category="automatizacion">
+                <div class="project-cover">
+                    <img src="assets/images/projects/forex-bot.svg"
+                         alt="Ilustración abstracta de un gráfico de velas financieras con una línea de señal"
+                         loading="lazy" decoding="async" width="480" height="270">
+                </div>
+                <div class="project-body">
+                    <span class="project-number">02</span>
+                    <span class="project-category-tag">Automatización</span>
+                    <h3>Bot de señales Forex</h3>
+                    <p class="project-summary">
+                        Sistema de análisis técnico multitemporal
+                        que genera señales y las envía mediante
+                        Telegram.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>MetaTrader 5</span>
+                        <span>Telegram</span>
+                    </div>
+                    <details class="project-details">
+                        <summary>Ver detalles</summary>
+                        <p>
+                            Analiza múltiples temporalidades conectado
+                            a MetaTrader 5 y envía las señales generadas
+                            a Telegram. El bot únicamente genera y
+                            notifica señales; no ejecuta operaciones de
+                            trading de forma automática.
+                        </p>
+                    </details>
                 </div>
             </article>
 
-            <article class="project-card">
-                <span class="project-number">03</span>
-                <h3>Jornadas Deportivas — Sígsig</h3>
-                <p>
-                    Sistema para la administración de jugadores,
-                    equipos y partidos, facilitando la
-                    organización de competencias deportivas.
-                </p>
-                <div class="project-tags">
-                    <span>Gestión deportiva</span>
-                    <span>Aplicación web</span>
+            <article class="project-card" data-category="gestion">
+                <div class="project-cover">
+                    <img src="assets/images/projects/jornadas-deportivas.svg"
+                         alt="Ilustración abstracta de una cancha deportiva con balón y marcadores de equipo"
+                         loading="lazy" decoding="async" width="480" height="270">
+                </div>
+                <div class="project-body">
+                    <span class="project-number">03</span>
+                    <span class="project-category-tag">Gestión deportiva</span>
+                    <h3>Jornadas Deportivas — Sígsig</h3>
+                    <p class="project-summary">
+                        Sistema para la administración de jugadores,
+                        equipos y partidos, facilitando la
+                        organización de competencias deportivas.
+                    </p>
+                    <div class="project-tags">
+                        <span>Gestión deportiva</span>
+                        <span>Aplicación web</span>
+                    </div>
+                    <details class="project-details">
+                        <summary>Ver detalles</summary>
+                        <p>
+                            Centraliza el registro de equipos, jugadores
+                            y partidos para el Cantón Sígsig, facilitando
+                            la organización de jornadas deportivas.
+                        </p>
+                    </details>
                 </div>
             </article>
 
-            <article class="project-card">
-                <span class="project-number">04</span>
-                <h3>Billetera Digital</h3>
-                <p>
-                    Aplicación orientada a la gestión de dinero
-                    digital, permitiendo registrar movimientos,
-                    controlar saldos y administrar operaciones
-                    financieras de manera organizada.
-                </p>
-                <div class="project-tags">
-                    <span>Fintech</span>
-                    <span>Aplicación web</span>
-                    <span>Gestión financiera</span>
+            <article class="project-card" data-category="fintech">
+                <div class="project-cover">
+                    <img src="assets/images/projects/billetera-digital.svg"
+                         alt="Ilustración abstracta de una billetera digital con tarjeta y flujo de saldo"
+                         loading="lazy" decoding="async" width="480" height="270">
+                </div>
+                <div class="project-body">
+                    <span class="project-number">04</span>
+                    <span class="project-category-tag">Fintech</span>
+                    <h3>Billetera Digital</h3>
+                    <p class="project-summary">
+                        Aplicación orientada a la gestión de dinero
+                        digital, permitiendo registrar movimientos,
+                        controlar saldos y administrar operaciones
+                        financieras de manera organizada.
+                    </p>
+                    <div class="project-tags">
+                        <span>Fintech</span>
+                        <span>Aplicación web</span>
+                        <span>Gestión financiera</span>
+                    </div>
+                    <details class="project-details">
+                        <summary>Ver detalles</summary>
+                        <p>
+                            Proyecto de software financiero para registrar
+                            movimientos y controlar saldos de forma
+                            organizada, conservando únicamente las
+                            funcionalidades implementadas en el código.
+                        </p>
+                    </details>
                 </div>
             </article>
 
-            <article class="project-card">
-                <span class="project-number">05</span>
-                <h3>Portafolio Profesional</h3>
-                <p>
-                    Sitio web responsivo y accesible para
-                    presentar proyectos, habilidades y
-                    experiencia en desarrollo de software.
-                </p>
-                <div class="project-tags">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>JavaScript</span>
+            <article class="project-card" data-category="web">
+                <div class="project-cover">
+                    <img src="assets/images/projects/portafolio-profesional.svg"
+                         alt="Ilustración abstracta de una ventana de navegador con símbolos de código"
+                         loading="lazy" decoding="async" width="480" height="270">
+                </div>
+                <div class="project-body">
+                    <span class="project-number">05</span>
+                    <span class="project-category-tag">Web</span>
+                    <h3>Portafolio Profesional</h3>
+                    <p class="project-summary">
+                        Sitio web responsivo y accesible para
+                        presentar proyectos, tecnologías y
+                        experiencia profesional.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <details class="project-details">
+                        <summary>Ver detalles</summary>
+                        <p>
+                            Este mismo sitio: construido con HTML5, CSS3
+                            y JavaScript puro, cuidando accesibilidad,
+                            rendimiento y diseño responsivo.
+                        </p>
+                    </details>
                 </div>
             </article>
 
@@ -253,12 +499,12 @@
             <div class="tech-category">
                 <h3>Frontend</h3>
                 <div class="tech-grid">
-                    <div class="tech-card">HTML5</div>
-                    <div class="tech-card">CSS3</div>
-                    <div class="tech-card">JavaScript</div>
-                    <div class="tech-card">TypeScript</div>
-                    <div class="tech-card">React</div>
-                    <div class="tech-card">Vite</div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/html5.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">HTML5</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/css3.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">CSS3</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/javascript.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">JavaScript</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/typescript.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">TypeScript</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/react.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">React</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/vite.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">Vite</span></div>
                 </div>
             </div>
 
@@ -266,10 +512,10 @@
             <div class="tech-category">
                 <h3>Backend y APIs</h3>
                 <div class="tech-grid">
-                    <div class="tech-card">Python</div>
-                    <div class="tech-card">FastAPI</div>
-                    <div class="tech-card">Node.js</div>
-                    <div class="tech-card">REST API</div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/python.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">Python</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/fastapi.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">FastAPI</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/nodejs.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">Node.js</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/rest-api.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">REST API</span></div>
                 </div>
             </div>
 
@@ -277,10 +523,10 @@
             <div class="tech-category">
                 <h3>Bases de datos</h3>
                 <div class="tech-grid">
-                    <div class="tech-card">PostgreSQL</div>
-                    <div class="tech-card">PostGIS</div>
-                    <div class="tech-card">SQL</div>
-                    <div class="tech-card">Alembic</div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/postgresql.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">PostgreSQL</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/postgis.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">PostGIS</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/sql.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">SQL</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/alembic.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">Alembic</span></div>
                 </div>
             </div>
 
@@ -288,10 +534,10 @@
             <div class="tech-category">
                 <h3>Cloud y despliegue</h3>
                 <div class="tech-grid">
-                    <div class="tech-card">AWS</div>
-                    <div class="tech-card">Render</div>
-                    <div class="tech-card">Vercel</div>
-                    <div class="tech-card">Cloudflare</div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/aws.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">AWS</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/render.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">Render</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/vercel.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">Vercel</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/cloudflare.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">Cloudflare</span></div>
                 </div>
             </div>
 
@@ -299,9 +545,9 @@
             <div class="tech-category">
                 <h3>DevOps y control de versiones</h3>
                 <div class="tech-grid">
-                    <div class="tech-card">Docker</div>
-                    <div class="tech-card">Git</div>
-                    <div class="tech-card">GitHub</div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/docker.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">Docker</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/git.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">Git</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/github.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">GitHub</span></div>
                 </div>
             </div>
 
@@ -309,17 +555,53 @@
             <div class="tech-category">
                 <h3>Herramientas y testing</h3>
                 <div class="tech-grid">
-                    <div class="tech-card">IntelliJ IDEA</div>
-                    <div class="tech-card">VS Code</div>
-                    <div class="tech-card">Playwright</div>
-                    <div class="tech-card">MetaTrader 5</div>
-                    <div class="tech-card">Telegram API</div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/intellijidea.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">IntelliJ IDEA</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/vscode.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">Visual Studio Code</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/playwright.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">Playwright</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/metatrader5.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">MetaTrader 5</span></div>
+                    <div class="tech-card"><span class="tech-icon"><img src="assets/icons/telegram.svg" alt="" loading="lazy" width="22" height="22"></span><span class="tech-name">Telegram API</span></div>
                 </div>
             </div>
 
         </div>
     </section>
 
+    <section id="trayectoria" aria-labelledby="trayectoria-title">
+
+        <span class="section-label">MI RECORRIDO</span>
+        <h2 id="trayectoria-title">Mi trayectoria</h2>
+        <p>
+            Formación académica y proyectos propios que marcan
+            mi recorrido como desarrollador hasta ahora.
+        </p>
+
+        <ol class="timeline">
+            <li class="timeline-item">
+                <span class="timeline-marker" aria-hidden="true"></span>
+                <div class="timeline-content">
+                    <span class="timeline-tag">Formación académica</span>
+                    <h3>Universidad Politécnica Salesiana</h3>
+                    <p>
+                        Formación en curso dentro del área de
+                        Software, cursando Aplicaciones Web.
+                    </p>
+                </div>
+            </li>
+
+            <li class="timeline-item">
+                <span class="timeline-marker" aria-hidden="true"></span>
+                <div class="timeline-content">
+                    <span class="timeline-tag">Proyectos propios</span>
+                    <h3>Desarrollo de proyectos propios</h3>
+                    <p>
+                        Territorio Electoral, Bot de señales Forex,
+                        Jornadas Deportivas del Cantón Sígsig, Billetera
+                        Digital y este Portafolio Profesional.
+                    </p>
+                </div>
+            </li>
+        </ol>
+    </section>
 
 
     <section id="contacto" aria-labelledby="contact-title">
@@ -346,6 +628,14 @@
                     Completa el formulario para preparar
                     un mensaje de contacto.
                 </p>
+
+                <!--
+                    Enlaces profesionales: configurados en
+                    SOCIAL_LINKS (js/main.js). Añade ahí las URL
+                    reales de GitHub / LinkedIn / correo para que
+                    aparezcan automáticamente en este bloque.
+                -->
+                <div class="social-links" id="social-links" aria-label="Enlaces profesionales"></div>
 
             </div>
 
@@ -415,7 +705,35 @@
 </main>
 
 <footer>
-    <p>Mi Portafolio Profesional</p>
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <span class="nav-logo-mark" aria-hidden="true">OT</span>
+            <div>
+                <p class="footer-name">Oscar Tacuri</p>
+                <p class="footer-role">Software Developer</p>
+            </div>
+        </div>
+
+        <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#tecnologias">Tecnologías</a></li>
+            <li><a href="#trayectoria">Trayectoria</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <!--
+            Enlaces sociales: se añadirán aquí (GitHub, LinkedIn)
+            cuando se disponga de las URL reales y configuradas.
+        -->
+
+    </div>
+
+    <p class="footer-bottom">
+        &copy; <span id="footer-year">2026</span> Oscar Tacuri. Todos los derechos reservados.
+    </p>
 </footer>
 
 </body>

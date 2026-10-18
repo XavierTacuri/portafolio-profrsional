@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" role="img" aria-labelledby="t-04">
+  <title id="t-04">Ilustración abstracta de una billetera digital con tarjeta y flujo de saldo</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101E33"/>
+      <stop offset="100%" stop-color="#050B17"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#00BFFF" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#00BFFF" stop-opacity="0"/>
+    </radialGradient>
+</defs>
+  <rect width="480" height="270" fill="url(#bg)"/>
+  <rect width="480" height="270" fill="url(#glow)"/>
+  <g fill="#00BFFF" opacity="0.12"><circle cx="20" cy="20" r="1.1"/><circle cx="20" cy="60" r="1.1"/><circle cx="20" cy="100" r="1.1"/><circle cx="20" cy="140" r="1.1"/><circle cx="20" cy="180" r="1.1"/><circle cx="20" cy="220" r="1.1"/><circle cx="20" cy="260" r="1.1"/><circle cx="60" cy="20" r="1.1"/><circle cx="60" cy="60" r="1.1"/><circle cx="60" cy="100" r="1.1"/><circle cx="60" cy="140" r="1.1"/><circle cx="60" cy="180" r="1.1"/><circle cx="60" cy="220" r="1.1"/><circle cx="60" cy="260" r="1.1"/><circle cx="100" cy="20" r="1.1"/><circle cx="100" cy="60" r="1.1"/><circle cx="100" cy="100" r="1.1"/><circle cx="100" cy="140" r="1.1"/><circle cx="100" cy="180" r="1.1"/><circle cx="100" cy="220" r="1.1"/><circle cx="100" cy="260" r="1.1"/><circle cx="140" cy="20" r="1.1"/><circle cx="140" cy="60" r="1.1"/><circle cx="140" cy="100" r="1.1"/><circle cx="140" cy="140" r="1.1"/><circle cx="140" cy="180" r="1.1"/><circle cx="140" cy="220" r="1.1"/><circle cx="140" cy="260" r="1.1"/><circle cx="180" cy="20" r="1.1"/><circle cx="180" cy="60" r="1.1"/><circle cx="180" cy="100" r="1.1"/><circle cx="180" cy="140" r="1.1"/><circle cx="180" cy="180" r="1.1"/><circle cx="180" cy="220" r="1.1"/><circle cx="180" cy="260" r="1.1"/><circle cx="220" cy="20" r="1.1"/><circle cx="220" cy="60" r="1.1"/><circle cx="220" cy="100" r="1.1"/><circle cx="220" cy="140" r="1.1"/><circle cx="220" cy="180" r="1.1"/><circle cx="220" cy="220" r="1.1"/><circle cx="220" cy="260" r="1.1"/><circle cx="260" cy="20" r="1.1"/><circle cx="260" cy="60" r="1.1"/><circle cx="260" cy="100" r="1.1"/><circle cx="260" cy="140" r="1.1"/><circle cx="260" cy="180" r="1.1"/><circle cx="260" cy="220" r="1.1"/><circle cx="260" cy="260" r="1.1"/><circle cx="300" cy="20" r="1.1"/><circle cx="300" cy="60" r="1.1"/><circle cx="300" cy="100" r="1.1"/><circle cx="300" cy="140" r="1.1"/><circle cx="300" cy="180" r="1.1"/><circle cx="300" cy="220" r="1.1"/><circle cx="300" cy="260" r="1.1"/><circle cx="340" cy="20" r="1.1"/><circle cx="340" cy="60" r="1.1"/><circle cx="340" cy="100" r="1.1"/><circle cx="340" cy="140" r="1.1"/><circle cx="340" cy="180" r="1.1"/><circle cx="340" cy="220" r="1.1"/><circle cx="340" cy="260" r="1.1"/><circle cx="380" cy="20" r="1.1"/><circle cx="380" cy="60" r="1.1"/><circle cx="380" cy="100" r="1.1"/><circle cx="380" cy="140" r="1.1"/><circle cx="380" cy="180" r="1.1"/><circle cx="380" cy="220" r="1.1"/><circle cx="380" cy="260" r="1.1"/><circle cx="420" cy="20" r="1.1"/><circle cx="420" cy="60" r="1.1"/><circle cx="420" cy="100" r="1.1"/><circle cx="420" cy="140" r="1.1"/><circle cx="420" cy="180" r="1.1"/><circle cx="420" cy="220" r="1.1"/><circle cx="420" cy="260" r="1.1"/><circle cx="460" cy="20" r="1.1"/><circle cx="460" cy="60" r="1.1"/><circle cx="460" cy="100" r="1.1"/><circle cx="460" cy="140" r="1.1"/><circle cx="460" cy="180" r="1.1"/><circle cx="460" cy="220" r="1.1"/><circle cx="460" cy="260" r="1.1"/></g>
+
+  <g transform="translate(70,70)">
+    <rect width="230" height="140" rx="18" fill="#0C1830" stroke="#00BFFF" stroke-width="1.6"/>
+    <rect y="34" width="230" height="22" fill="#00BFFF" opacity="0.18"/>
+    <circle cx="190" cy="100" r="22" fill="#00BFFF" opacity="0.25"/>
+    <circle cx="165" cy="100" r="22" fill="#7dd3fc" opacity="0.2"/>
+    <rect x="24" y="90" width="70" height="10" rx="5" fill="#EAF6FF" opacity="0.5"/>
+    <rect x="24" y="108" width="46" height="8" rx="4" fill="#A8B8CC" opacity="0.4"/>
+  </g>
+  <g stroke="#00BFFF" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.85">
+    <polyline points="330,190 360,150 390,165 430,100"/>
+  </g>
+  <circle cx="430" cy="100" r="5" fill="#EAF6FF"/>
+  <g fill="#EAF6FF" opacity="0.8">
+    <circle cx="340" cy="70" r="3"/>
+    <circle cx="400" cy="60" r="2.5"/>
+  </g>
+</svg>
