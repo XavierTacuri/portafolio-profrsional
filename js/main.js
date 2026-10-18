@@ -200,8 +200,8 @@ if (footerYear) {
 // estén disponibles. Un enlace con valor vacío ("") no se muestra.
 
 const SOCIAL_LINKS = {
-    github: "",
-    linkedin: "",
+    github: "https://github.com/XavierTacuri",
+    linkedin: "https://www.linkedin.com/in/xavier-tacuri-sarmiento",
     email: ""
 };
 
@@ -221,25 +221,28 @@ const SOCIAL_LABELS = {
 };
 
 function renderSocialLinks() {
-    const container = document.querySelector("#social-links");
+    const containers = document.querySelectorAll(".social-links");
 
-    if (!container) {
+    if (!containers.length) {
         return;
     }
 
-    Object.entries(SOCIAL_LINKS).forEach(([key, url]) => {
-        if (!url) {
-            return;
-        }
+    containers.forEach((container) => {
+        Object.entries(SOCIAL_LINKS).forEach(([key, url]) => {
+            if (!url) {
+                return;
+            }
 
-        const link = document.createElement("a");
-        link.className = "social-link";
-        link.href = key === "email" ? `mailto:${url}` : url;
-        link.target = key === "email" ? "_self" : "_blank";
-        link.rel = key === "email" ? "" : "noopener noreferrer";
-        link.innerHTML = `${SOCIAL_ICONS[key] || ""}<span>${SOCIAL_LABELS[key] || key}</span>`;
+            const link = document.createElement("a");
+            link.className = "social-link";
+            link.href = key === "email" ? `mailto:${url}` : url;
+            link.target = key === "email" ? "_self" : "_blank";
+            link.rel = key === "email" ? "" : "noopener noreferrer";
+            link.setAttribute("aria-label", SOCIAL_LABELS[key] || key);
+            link.innerHTML = `${SOCIAL_ICONS[key] || ""}<span>${SOCIAL_LABELS[key] || key}</span>`;
 
-        container.appendChild(link);
+            container.appendChild(link);
+        });
     });
 }
 
