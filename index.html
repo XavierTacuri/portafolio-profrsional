@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Portafolio profesional de desarrollo de software.">
+    <title>Mi Portafolio | Software Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+
+<header>
+    <nav aria-label="Navegación principal">
+
+        <a href="#inicio" class="nav-logo">
+            DEV.PORTFOLIO
+        </a>
+
+        <button
+                type="button"
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Abrir menú de navegación"
+                aria-controls="nav-links"
+                aria-expanded="false"
+        >
+            <span aria-hidden="true">☰</span>
+        </button>
+
+        <ul id="nav-links" class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#tecnologias">Tecnologías</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<main>
+    <section id="inicio">
+        <h1>Transformando ideas en soluciones digitales</h1>
+        <p>Desarrollo de software, automatización y tecnología.</p>
+        <a href="#proyectos">Explorar proyectos</a>
+    </section>
+
+    <section id="sobre-mi" aria-labelledby="sobre-mi-titulo">
+
+        <div class="about-container">
+
+            <div class="about-content">
+
+            <span class="section-label">
+                CONOCE MI PERFIL
+            </span>
+
+                <h2 id="sobre-mi-titulo">
+                    Sobre mí
+                </h2>
+
+                <h3>
+                    Desarrollo tecnología para resolver
+                    problemas reales.
+                </h3>
+
+                <p>
+                    Soy desarrollador de software con interés
+                    en crear soluciones tecnológicas
+                    innovadoras, funcionales y escalables.
+                </p>
+
+                <p>
+                    He trabajado en proyectos relacionados
+                    con sistemas de gestión, aplicaciones
+                    financieras, automatización de procesos
+                    y plataformas de análisis de datos.
+                </p>
+
+                <p>
+                    Me apasiona transformar ideas en
+                    herramientas digitales que optimicen
+                    procesos y generen valor para
+                    las personas y organizaciones.
+                </p>
+
+                <a href="#contacto" class="about-button">
+                    Hablemos de tu proyecto
+                </a>
+
+            </div>
+
+            <div class="about-specialties">
+
+                <article class="specialty-card">
+                <span class="specialty-icon" aria-hidden="true">
+                    &lt;/&gt;
+                </span>
+                    <h4>Desarrollo Web</h4>
+                    <p>
+                        Creación de aplicaciones y
+                        plataformas web modernas.
+                    </p>
+                </article>
+
+                <article class="specialty-card">
+                <span class="specialty-icon" aria-hidden="true">
+                    ⚙
+                </span>
+                    <h4>Automatización</h4>
+                    <p>
+                        Desarrollo de herramientas para
+                        automatizar tareas y procesos.
+                    </p>
+                </article>
+
+                <article class="specialty-card">
+                <span class="specialty-icon" aria-hidden="true">
+                    ▤
+                </span>
+                    <h4>Bases de Datos</h4>
+                    <p>
+                        Organización y gestión de
+                        información estructurada.
+                    </p>
+                </article>
+
+                <article class="specialty-card">
+                <span class="specialty-icon" aria-hidden="true">
+                    ◈
+                </span>
+                    <h4>Soluciones Tecnológicas</h4>
+                    <p>
+                        Diseño de sistemas adaptados
+                        a necesidades reales.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="proyectos">
+        <h2>Mis proyectos</h2>
+        <p>
+            Explora algunas de las soluciones tecnológicas
+            que he desarrollado.
+        </p>
+
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <span class="project-number">01</span>
+                <h3>Territorio Electoral</h3>
+                <p>
+                    Plataforma para la gestión territorial,
+                    registros ciudadanos, encuestas y
+                    visualización geográfica.
+                </p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>PostgreSQL</span>
+                    <span>PostGIS</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <span class="project-number">02</span>
+                <h3>Bot de señales Forex</h3>
+                <p>
+                    Sistema de análisis técnico multitemporal
+                    que genera señales de trading y envía
+                    notificaciones mediante Telegram.
+                </p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>MetaTrader 5</span>
+                    <span>Telegram</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <span class="project-number">03</span>
+                <h3>Jornadas Deportivas — Sígsig</h3>
+                <p>
+                    Sistema para la administración de jugadores,
+                    equipos y partidos, facilitando la
+                    organización de competencias deportivas.
+                </p>
+                <div class="project-tags">
+                    <span>Gestión deportiva</span>
+                    <span>Aplicación web</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <span class="project-number">04</span>
+                <h3>Billetera Digital</h3>
+                <p>
+                    Aplicación orientada a la gestión de dinero
+                    digital, permitiendo registrar movimientos,
+                    controlar saldos y administrar operaciones
+                    financieras de manera organizada.
+                </p>
+                <div class="project-tags">
+                    <span>Fintech</span>
+                    <span>Aplicación web</span>
+                    <span>Gestión financiera</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <span class="project-number">05</span>
+                <h3>Portafolio Profesional</h3>
+                <p>
+                    Sitio web responsivo y accesible para
+                    presentar proyectos, habilidades y
+                    experiencia en desarrollo de software.
+                </p>
+                <div class="project-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <section id="tecnologias" aria-labelledby="tech-title">
+
+        <span class="section-label">MI STACK TECNOLÓGICO</span>
+
+        <h2 id="tech-title">Tecnologías y herramientas</h2>
+
+        <p>
+            Tecnologías utilizadas, plataformas exploradas
+            y herramientas de mi entorno de desarrollo.
+        </p>
+
+        <div class="tech-categories">
+
+            <!-- FRONTEND -->
+            <div class="tech-category">
+                <h3>Frontend</h3>
+                <div class="tech-grid">
+                    <div class="tech-card">HTML5</div>
+                    <div class="tech-card">CSS3</div>
+                    <div class="tech-card">JavaScript</div>
+                    <div class="tech-card">TypeScript</div>
+                    <div class="tech-card">React</div>
+                    <div class="tech-card">Vite</div>
+                </div>
+            </div>
+
+            <!-- BACKEND -->
+            <div class="tech-category">
+                <h3>Backend y APIs</h3>
+                <div class="tech-grid">
+                    <div class="tech-card">Python</div>
+                    <div class="tech-card">FastAPI</div>
+                    <div class="tech-card">Node.js</div>
+                    <div class="tech-card">REST API</div>
+                </div>
+            </div>
+
+            <!-- BASES DE DATOS -->
+            <div class="tech-category">
+                <h3>Bases de datos</h3>
+                <div class="tech-grid">
+                    <div class="tech-card">PostgreSQL</div>
+                    <div class="tech-card">PostGIS</div>
+                    <div class="tech-card">SQL</div>
+                    <div class="tech-card">Alembic</div>
+                </div>
+            </div>
+
+            <!-- CLOUD -->
+            <div class="tech-category">
+                <h3>Cloud y despliegue</h3>
+                <div class="tech-grid">
+                    <div class="tech-card">AWS</div>
+                    <div class="tech-card">Render</div>
+                    <div class="tech-card">Vercel</div>
+                    <div class="tech-card">Cloudflare</div>
+                </div>
+            </div>
+
+            <!-- DEVOPS -->
+            <div class="tech-category">
+                <h3>DevOps y control de versiones</h3>
+                <div class="tech-grid">
+                    <div class="tech-card">Docker</div>
+                    <div class="tech-card">Git</div>
+                    <div class="tech-card">GitHub</div>
+                </div>
+            </div>
+
+            <!-- HERRAMIENTAS -->
+            <div class="tech-category">
+                <h3>Herramientas y testing</h3>
+                <div class="tech-grid">
+                    <div class="tech-card">IntelliJ IDEA</div>
+                    <div class="tech-card">VS Code</div>
+                    <div class="tech-card">Playwright</div>
+                    <div class="tech-card">MetaTrader 5</div>
+                    <div class="tech-card">Telegram API</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="contacto" aria-labelledby="contact-title">
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+            <span class="section-label">
+                TRABAJEMOS JUNTOS
+            </span>
+
+                <h2 id="contact-title">
+                    ¿Tienes un proyecto en mente?
+                </h2>
+
+                <p>
+                    Estoy interesado en colaborar en nuevos
+                    proyectos tecnológicos y desarrollar
+                    soluciones innovadoras.
+                </p>
+
+                <p>
+                    Completa el formulario para preparar
+                    un mensaje de contacto.
+                </p>
+
+            </div>
+
+            <div class="contact-form-container">
+
+                <h3>Envíame un mensaje</h3>
+
+                <form id="contact-form" novalidate>
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                autocomplete="name"
+                                aria-describedby="nombre-error"
+                                required
+                        >
+                        <span class="error-message"
+                              id="nombre-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                autocomplete="email"
+                                aria-describedby="email-error"
+                                required
+                        >
+                        <span class="error-message"
+                              id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea
+                                id="mensaje"
+                                name="mensaje"
+                                rows="5"
+                                aria-describedby="mensaje-error"
+                                required
+                        ></textarea>
+                        <span class="error-message"
+                              id="mensaje-error"></span>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        Preparar mensaje
+                    </button>
+
+                    <p id="form-status"
+                       role="status"
+                       aria-live="polite"></p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Mi Portafolio Profesional</p>
+</footer>
+
+</body>
+</html>
